@@ -1,0 +1,58 @@
+.labelname{
+     width:95%;
+     border-radius: 20px;
+     border-color: black;
+     border-style: double;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+ 
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .hidden{
+    display:none;
+  }.circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(44, 108, 128);
+    position: relative;
+  }
+  .circle::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    height: 10px;
+    margin-top: -5px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    z-index: 9;
+  }
+  .circle::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 10px;
+    margin-left: -5px;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    z-index: 9;
+  }
+  #listall2{
+    display:none;
+    
+  }
